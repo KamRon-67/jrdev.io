@@ -2,7 +2,7 @@
 title: "Growing as a dev during covid"
 description: "It is easy to get complacent lets avoid that"
 tags: [Covid, Working From Home, Growth, Slacker]
-excerpt_image: https://raw.githubusercontent.com/KamRon-67/jrdev.io/master/assets/img/pexels-gilberto-olimpio.jpg
+excerpt_image: https://raw.githubusercontent.com/KamRon-67/jrdev.io/master/assets/img/green_plant.jpg
 ---
 
 My first free form blog post is not going to be 100% technical. I knew this time would come. Throughout my short career, I have always seen this similar conversation pop up in some way,  "How good of a developer is x"? In casual conversation or typically after a job interview. At the time of this writing, there is a global pandemic going on. So a lot of people are working from home. That made me think of my skills and how do you work out your "coding muscles". I will share a little bit about how I increased my skills.
