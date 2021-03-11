@@ -2,7 +2,7 @@
 title: "The T In TDD"
 description: "How to set up tests to do TDD"
 tags: [TDD, Testing, Testing Framework, C#, NUnit]
-excerpt_image: https://raw.githubusercontent.com/KamRon-67/jrdev.io/master/assets/img/flower3.jpeg
+excerpt_image: https://raw.githubusercontent.com/KamRon-67/jrdev.io/master/assets/img/orangeFlower.jpg
 ---
 
 By this point. If you have read some of my older blog postings. You know I am apart of a programming group that is big on TDD and the DDD paradigm.  My mind is all over the place and I learn 5 things at one time. During this storm of random learning. I picked up TDD while reading "Working Effectively With Legacy Code" by Michael C. Feathers.
@@ -146,4 +146,4 @@ This is a good starting point for working with a test framework. There is more t
 When I was introduced to testing I was not aware of any framework options patterns or ways to structure my tests. Or even how to test. 
 In the dot net space, you can unit test razor pages, controllers, and middleware. Testing things like this can help you maintain the integrity of your project as it grows or if you need to do a refactor down the line. 
 
-Say you are moving from an ORM to a more traditional database setup. For whatever reason. Having tests fail while you are working on the migration and you are in the same headspace. Is a lot better than the same bug popping up 6 months later and you are on to something else. 
+Say you are moving from an ORM to a more traditional database setup. For whatever reason. Having tests fail while you are working on the migration and you are in the same headspace. Is a lot better than the same bug popping up 6 months later and you are on to something else.
