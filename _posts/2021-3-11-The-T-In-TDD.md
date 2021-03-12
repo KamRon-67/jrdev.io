@@ -16,7 +16,7 @@ This is more of a "how to structure" your tests. We will not go over "how" to te
 
 Personally, starting something is hard. I always get hung up on best practices and structure. This post will not jump into best practices as that is a post all of its own but just lightly touch the options you have in a testing framework. This should get you started on your TDD journey.
 
-Many frameworks follow an attribute pattern. They use attributes to dictate functionality. I will cover the NUnit style. XUnit shares a history with NUnit and both are extremely popular. There are reasons to pick one over the other but that again is a post by itself. Some frameworks won't follow the same attribute style per-se such as PyTest for python.  The spirit of it is still there as Pytest will do something like ```python @pytest.fixture``` above a method.
+Many frameworks follow an attribute pattern. They use attributes to dictate functionality. I will cover the NUnit style. XUnit shares a history with NUnit and both are extremely popular. There are reasons to pick one over the other but that again is a post by itself. Some frameworks won't follow the same attribute style per-se such as PyTest for python.  The spirit of it is still there as Pytest will do something like ```@pytest.fixture``` above a method.
 
 There are many attributes available in a test framework. Some of the most common are fixtures, test, set up, tear down, ignore, and category. There are more options but we will narrow our focus. There is a long list and you can find all of the NUnit attributes [here](https://docs.nunit.org/articles/nunit/writing-tests/attributes.html).
 
@@ -100,7 +100,7 @@ There are a few ways you can use to structure your fixtures depending on your ne
 This is just one way of using inheritance, generics, or parameterization. You can create a pattern that works for you. Depending on the language you choose to use. There may be pattern limitations or you will have to structure them differently. When moving from a c# automation project to a python project. I had to rethink a lot of what I did. Eventually we threw away our page object pattern. For a more dynamic data-driven approach using JSON files.
 
 The test attribute just marks a test case. More specifically this attribute lets the test runner know this method should be run.
- 
+
 ```csharp
  [TestFixture]
   public class SuccessTests
