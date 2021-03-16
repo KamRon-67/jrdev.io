@@ -12,7 +12,7 @@ To work with a lot of the cool flashy js frameworks, I was told to understand Ja
 
 ## The breakdown
 
-I was noticing that JavaScript was playing by different rules than C# or Java. Side note: I do Java sometimes when needed but not as I used to back in college. Back in my day, Java was the golden child, and everything we implemented in it. The C++ religion was dying down, and this took its place. It is interesting to see the same pattern happen with python. My professor Dr. Hang Chen (a very sharp man who took little bs, and I had a ton to give) at the time had the view that using Java was making us softer coders and real coders used C++ or C. It is just funny to see this same idea come up in a new era with js and python versus other compiled languages back to prototypes. I was attacking this with the mindset of a Java/C# coder.
+I was noticing that JavaScript was playing by different rules than C# or Java. Side note: I do Java sometimes when needed but not as I used to back in college. Back in my day, Java was the golden child, and we implemented in it. The C++ religion was dying down, and this took its place. It is interesting to see the same pattern happen with python. My professor Dr. Hang Chen (a very sharp man who took little bs. Then there was me, and I had a ton to give) at the time had the view that using Java was making us softer coders and real coders used C++ or C. It is just funny to see this same idea come up in a new era with js and python versus other compiled languages. Okay back to prototypes. I was attacking this with the mindset of a Java/C# coder.
 
 ## The What
 
