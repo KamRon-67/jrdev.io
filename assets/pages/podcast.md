@@ -1,14 +1,14 @@
 ---
-title: "Testing new section"
+title: "Podcasts"
 nav_title: "Podcast"
 description: "This is the podcast section"
 include_nav: true
 tags: [personal]
 permalink: /podcast/
-youtubeId: q1wiy-BF3jk
+youtubeId: ipJvZYRuvjQ
 ---
 
 
-coming soon
+A few thoughts on why you should take your pto!
 
 {% include youtubePlayer.html id=page.youtubeId %}
