@@ -10,7 +10,7 @@ Like most people during covid, I missed my coding groups!!! I use to belong to t
 Reflection is used when we want to operate on an object during runtime. I like to think of it as creating objects backward. Reflection is a meta-programming feature that many programming languages support. You can write code that inspects other code, the same system, or even itself. It sometimes can modify the behavior of that code or methods during runtime. That is my more technical definition. I was able to come up with that after I figured out my simple example.
 
 
-![A tree over looking the water seeing itself back](https://raw.githubusercontent.com/KamRon-67/jrdev.io/master/assets/img/reflections_201617.jpg "Tree over looking the water seeing itself back")
+![A tree over looking the water](https://raw.githubusercontent.com/KamRon-67/jrdev.io/master/assets/img/reflections_201617.jpg "TA tree over looking the water")
 
 In reflection, we are interested in the [types](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/types/) and [members](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/members). Typically in a program, you create objects, call functions, set values for the properties of this class. When using reflection, things are different you have to construct what you are going to reflect on. We are not interested in the instance or its values, properties but we are interested in its type itself. What properties and methods it has. We can call those methods at run time.
 
