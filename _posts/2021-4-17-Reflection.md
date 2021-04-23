@@ -1,3 +1,10 @@
+---
+title: "An Example of Reflection"
+description: "I understand reflection but I have never used it to solve a problem"
+tags: [aspnet core, reflection]
+excerpt_image: https://raw.githubusercontent.com/KamRon-67/jrdev.io/master/assets/img/reflections_201617.jpg
+---
+
 Like most people during covid, I missed my coding groups!!! I use to belong to three or four groups. While they are still around none of my local branches did not decide to go virtual. So I expanded my options and dropped into any open C# groups. I truly enjoyed it. Excluding my main coding group I had not been around other non-work devs. One thing that kept popping up was refection. Most of the people I am around are more experienced than me. So every time everyone would just gloss over reflection and we would all laugh. While I was laughing I would get lost in what came next. I understood what reflection was as an easy concept. Never seeing it in action or using it limited that understanding. So enough back story this is the what is reflection post.
 
 Reflection is used when we want to operate on an object (not a particular instance) during runtime. I like to think of it as creating objects backward. Reflection is a meta-programming feature that many programming languages support. You can write code that inspects other code, the same system, or even itself. It sometimes can modify the behavior of that code or methods during runtime. That is my more technical definition. I was able to come up with that after I figured out my simple example.
