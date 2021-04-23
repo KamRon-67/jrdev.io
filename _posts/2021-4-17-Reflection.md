@@ -5,13 +5,16 @@ tags: [aspnet core, reflection]
 excerpt_image: https://raw.githubusercontent.com/KamRon-67/jrdev.io/master/assets/img/reflections_201617.jpg
 ---
 
-Like most people during covid, I missed my coding groups!!! I use to belong to three or four groups. While they are still around none of my local branches did not decide to go virtual. So I expanded my options and dropped into any open C# groups. I truly enjoyed it. Excluding my main coding group I had not been around other non-work devs. One thing that kept popping up was refection. Most of the people I am around are more experienced than me. So every time everyone would just gloss over reflection and we would all laugh. While I was laughing I would get lost in what came next. I understood what reflection was as an easy concept. Never seeing it in action or using it limited that understanding. So enough back story this is the what is reflection post.
+Like most people during covid, I missed my coding groups!!! I use to belong to three or four groups. While they are still around none of my local branches decided to go virtual. So I expanded my options and dropped into any open C# groups. I enjoyed it. Excluding my main coding group I had not been around other non-work devs. We would have talks about bout complex things. One thing that kept popping up was refection. Most of the people I am around are more experienced than me. So every time it was brought up we would just gloss over reflection and we would all laugh about why it was used. While I was laughing, I would get lost in what came next. I understood what reflection was as a concept. Never seeing it in action or using it, limited that understanding. So enough back story this is the what is reflection post.
 
-Reflection is used when we want to operate on an object (not a particular instance) during runtime. I like to think of it as creating objects backward. Reflection is a meta-programming feature that many programming languages support. You can write code that inspects other code, the same system, or even itself. It sometimes can modify the behavior of that code or methods during runtime. That is my more technical definition. I was able to come up with that after I figured out my simple example.
+Reflection is used when we want to operate on an object during runtime. I like to think of it as creating objects backward. Reflection is a meta-programming feature that many programming languages support. You can write code that inspects other code, the same system, or even itself. It sometimes can modify the behavior of that code or methods during runtime. That is my more technical definition. I was able to come up with that after I figured out my simple example.
+
+
+![A tree over looking the water seeing itself back](https://raw.githubusercontent.com/KamRon-67/jrdev.io/master/assets/img/reflections_201617.jpg "Tree over looking the water seeing itself back")
 
 In reflection, we are interested in the [types](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/types/) and [members](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/members). Typically in a program, you create objects, call functions, set values for the properties of this class. When using reflection, things are different you have to construct what you are going to reflect on. We are not interested in the instance or its values, properties but we are interested in its type itself. What properties and methods it has. We can call those methods at run time.
 
-Looking at the [Microsoft doc](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/concepts/reflection), all I have to do is use the GetType method and bam magic!! That was not enough for me. Seriously there is another [link](https://docs.microsoft.com/en-us/dotnet/framework/reflection-and-codedom/reflection) with more information. The way I was told it was used, when to use it and how to use it were still things that confused me. So I made a short and useless program. To use reflection to produce an action.
+Looking at the [Microsoft doc](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/concepts/reflection), all I have to do is use the GetType method and bam magic!! That was not enough for me. Seriously there is another [link](https://docs.microsoft.com/en-us/dotnet/framework/reflection-and-codedom/reflection) with more information. The way it is used and when to use it. Were still things that confused me. So I made a short and useless program. To use reflection to produce an action.
 
 ```csharp
 var query = from m in typeof(string).GetMethods()
@@ -27,7 +30,7 @@ var query = from m in typeof(string).GetMethods()
 				Console.WriteLine(item);
 			}
 ```
-Here we drilled into the static string class to see how many overloads each method has then ordered them first by the number of overloads then alphabetically. This was a simple example of reflection. The GetMethods method shuffles its order each call. You would not want to depend on it without a constraint. Let's look at more of a breakdown. A real-world use of reflection would be a unit testing framework. We are not going to create one here but look at how it works in an isolated point. The full code is [here](https://github.com/KamRon-67/reflectionProj/blob/Master/Program.cs) If you want to see how to implement a full framework this [blog here](https://devblogs.microsoft.com/dotnet/show-dotnet-build-your-own-unit-test-platform-the-true-story-of-net-nanoframework/) is for you.
+Here we drilled into the static string class to see how many overloads each method has then ordered them first by the number of overloads then alphabetically. This was a simple example of reflection. The GetMethods method shuffles its order each call. You would not want to depend on it without a constraint. Let's look at more of a breakdown. A real-world use of reflection would be a unit testing framework. We are not going to create one, but look at how it works in an isolated point. The full code is [here](https://github.com/KamRon-67/reflectionProj/blob/Master/Program.cs) If you want to see how to implement a full framework this [blog here](https://devblogs.microsoft.com/dotnet/show-dotnet-build-your-own-unit-test-platform-the-true-story-of-net-nanoframework/) is for you.
 
 ```csharp
 Type personType = typeof(Person);
@@ -59,7 +62,7 @@ foreach (var item in methods)
 	Console.ReadKey();
 ```
 
-This is the full program but let's start with the main method. We use the [Type](https://docs.microsoft.com/en-us/dotnet/api/system.type?view=net-5.0) class and the [typeof](https://docs.microsoft.com/en-us/dotnet/api/system.type?view=net-5.0) method. This will give us the ability to create an instance of our person type. We use the GetMethods method on that instance, now we will get all of the public methods of Person.
+Let's start with the main method. We use the [Type](https://docs.microsoft.com/en-us/dotnet/api/system.type?view=net-5.0) class and the [typeof](https://docs.microsoft.com/en-us/dotnet/api/system.type?view=net-5.0) method. This will give us the ability to create an instance of our person type. We use the GetMethods method on that instance, now we will get all of the public methods of Person.
 
 Here we create a person class and a custom [attribute](https://docs.microsoft.com/en-us/dotnet/csharp/tutorials/attributes). By giving it a parameter later we can use set values during our refection process. Putting the "Attribute" in the class name seems to be the standard. I am not a fan as it is a little confusing.
 
